@@ -20,7 +20,7 @@ func Map(vs [][]string, f func([]string) orb.Point) []orb.Point {
 }
 
 func readData() []orb.Point {
-	f, _ := os.Open("data/cities.csv")
+	f, _ := os.Open("cities.csv")
 	defer f.Close()
 	csvReader := csv.NewReader(f)
 	csvReader.Read() // Skip header

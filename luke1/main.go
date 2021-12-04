@@ -73,7 +73,7 @@ func readFile(filename string) string {
 }
 
 func main() {
-	tallData := readFile("data/tall.txt")
+	tallData := readFile("tall.txt")
 	tallDataLen := len(tallData)
 	tallMap := createTallMap()
 
